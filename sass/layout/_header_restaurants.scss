@@ -1,0 +1,16 @@
+.restaurantheader{
+    width: 100%;
+    &__haut{
+        display: flex;
+        align-items: center;
+        .fa-arrow-left{
+            margin-left: 2em;
+            margin-right: 35vw;
+        
+        }
+        &__logo{
+            text-align: center;
+            padding: 1em 0em 1em 0em;
+        }
+    }
+}

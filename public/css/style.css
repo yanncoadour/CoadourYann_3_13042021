@@ -50,4 +50,20 @@ body {
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 
+.restaurantheader {
+  width: 100%;
+}
+.restaurantheader__haut {
+  display: flex;
+  align-items: center;
+}
+.restaurantheader__haut .fa-arrow-left {
+  margin-left: 2em;
+  margin-right: 35vw;
+}
+.restaurantheader__haut__logo {
+  text-align: center;
+  padding: 1em 0em 1em 0em;
+}
+
 /*# sourceMappingURL=style.css.map */

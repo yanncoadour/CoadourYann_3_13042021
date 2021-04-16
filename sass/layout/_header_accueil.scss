@@ -2,11 +2,13 @@
 
     &__logo{
         text-align: center;
+
+        &__img{
+            padding: 2em 0em 2em 0em;
+        }
     }
     
-    &__img{
-        padding: 2em 0em 2em 0em;
-    }
+    
 
     &__local{
         width: 100%;

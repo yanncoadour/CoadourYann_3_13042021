@@ -1,0 +1,25 @@
+.footer{
+    width: 100%;
+    background-color: $bg3;
+    color : white;
+    padding: 0.5em 0em 2em 0em;
+    &__titre{
+        font-family: $police-titre ;
+        text-align: center;
+    }
+    &__menu{
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        &__avecicon{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0.25em;
+        }
+        &__sansicon{
+            margin-bottom: 0.25em;
+        }
+    }
+}

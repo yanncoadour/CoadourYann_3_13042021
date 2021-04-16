@@ -66,4 +66,30 @@ body {
   padding: 1em 0em 1em 0em;
 }
 
+.footer {
+  width: 100%;
+  background-color: #353535;
+  color: white;
+  padding: 0.5em 0em 2em 0em;
+}
+.footer__titre {
+  font-family: "Shrikhand";
+  text-align: center;
+}
+.footer__menu {
+  text-align: center;
+}
+.footer__menu a {
+  text-decoration: none;
+  color: white;
+}
+.footer__menu__avecicon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.25em;
+}
+.footer__menu__sansicon {
+  margin-bottom: 0.25em;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -41,13 +41,19 @@ body {
   padding-bottom: 1em;
 }
 .header__présentation__bouton {
-  border: 1px solid #f6f6f6;
+  border: transparent;
   border-radius: 30px;
   padding: 1em 1em 1em 1em;
+  box-shadow: 0 4px 0.5em #c0c0c0;
+  cursor: pointer;
   color: white;
   display: block;
   margin: auto;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+.header__présentation__bouton:hover {
+  background: linear-gradient(#fface8, #ae80e5);
+  box-shadow: 0 4px 0.5em #a5a5a5;
 }
 
 .restaurantheader {
@@ -132,11 +138,18 @@ body {
   justify-content: flex-start;
   width: 19em;
   margin-bottom: 1em;
-  border: 1px solid #f6f6f6;
   border-radius: 20px;
+  box-shadow: 0 4px 0.5em #dfdfdf;
   background-color: #f6f6f6;
   margin-right: 1em;
   margin-left: 1em;
+}
+.fonctionnement_bloc__box:hover {
+  background-color: #f2eafb;
+  box-shadow: 1px 5px 8px 0px #d1d1d1;
+}
+.fonctionnement_bloc__box:hover:hover i {
+  color: #9356DC;
 }
 .fonctionnement_bloc__box__icon {
   margin-right: 1.5em;
@@ -152,6 +165,7 @@ body {
   padding-left: 2em;
   border: 1px solid #f6f6f6;
   border-radius: 20px;
+  margin: auto;
 }
 .restaurants__titre {
   padding-top: 1em;
@@ -162,6 +176,12 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.restaurants a {
+  text-decoration: none;
+  color: black;
+  width: 40%;
+  margin-right: 8vw;
+}
 
 .restaurants_bloc {
   display: flex;
@@ -169,16 +189,27 @@ body {
   background-color: white;
   border: 1px transparent;
   border-radius: 25px;
-  box-shadow: 0 0 0.5em #353535;
+  box-shadow: 0 3px 0.5em #dfdfdf;
   margin: 2em 5em 2em 5em;
   height: 25em;
-  width: 40%;
+  width: 100%;
   overflow: hidden;
+  position: relative;
 }
 .restaurants_bloc img {
   height: 19em;
   object-fit: cover;
   width: 100%;
+}
+.restaurants_bloc__badge {
+  background-color: #99E2D0;
+  color: #008766;
+  font-weight: bold;
+  padding: 0.4em 0.8em 0.4em 0.8em;
+  border-radius: 2px;
+  position: absolute;
+  top: 1em;
+  right: 0.75em;
 }
 .restaurants_bloc__description {
   display: flex;
@@ -197,6 +228,33 @@ body {
 }
 .restaurants_bloc__description__coeur {
   margin-right: 1.5em;
+}
+.restaurants_bloc__description__coeur .icon-plein {
+  display: none;
+}
+.restaurants_bloc__description__coeur .icon-vide {
+  display: block;
+}
+.restaurants_bloc__description__coeur:hover .icon-plein {
+  display: block;
+  background: linear-gradient(to bottom left, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  animation: coeur 1s ease-in-out;
+}
+@keyframes coeur {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.restaurants_bloc__description__coeur:hover .icon-vide {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,11 +16,9 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    align-items:inherit;
+    align-items:inherit; 
     
-    &__numero{
-        
-        
+    &__numero{   
         &__number{
             background-color: #9356DC;
             border: 1px solid #9356DC;
@@ -42,11 +40,17 @@
         justify-content: flex-start;
         width: 19em;
         margin-bottom: 1em;
-        border: 1px solid $bg2;
         border-radius: 20px;
+        box-shadow: 0 4px 0.5em #dfdfdf;
         background-color: $bg2;
         margin-right: 1em;
         margin-left: 1em;
+        &:hover {
+            background-color: lighten($couleur_primaire, 35%);
+            box-shadow: 1px 5px 8px 0px rgb(209, 209, 209);
+            &:hover i {
+              color: $couleur_primaire;}
+            }
 
         &__icon{
             margin-right: 1.5em;
@@ -65,6 +69,7 @@
     padding-left: 2em;
     border: 1px solid $bg2;
     border-radius: 20px;
+    margin: auto;
     &__titre{
         padding-top: 1em;
     }
@@ -75,6 +80,13 @@
         flex-direction: row ;
         flex-wrap: wrap;
     }
+    a{
+        text-decoration: none;
+        color: black;
+        width:40%;
+        margin-right: 8vw;
+    }
+    
 }
 
 .restaurants_bloc{
@@ -83,15 +95,28 @@
     background-color: white;
     border: 1px transparent;
     border-radius: 25px;
-    box-shadow: 0 0 0.5em $bg3;
+    box-shadow: 0 3px 0.5em #dfdfdf;
     margin: 2em 5em 2em 5em ;
     height: 25em;
-    width: 40%;
+    width: 100%;
     overflow: hidden;
+    position: relative;
     img{
         height: 19em;
         object-fit: cover;
         width: 100%;
+    }
+    &__badge{
+        background-color: $couleur_tertiaire;
+        color: #008766;
+        font-weight: bold;
+        padding: 0.40em 0.8em 0.40em 0.8em;
+        border-radius: 2px;
+        position: absolute;
+        top: 1em;
+        right: 0.75em;
+    
+        
     }
     &__description{
         display: flex;
@@ -110,6 +135,35 @@
         }
         &__coeur{
             margin-right: 1.5em;
+            .icon-plein{
+                display: none;
+            }
+            .icon-vide{
+                display: block;
+            }
+            &:hover{
+                .icon-plein{
+                    display: block;
+                    background: linear-gradient(to bottom left,$couleur_primaire, $couleur_secondaire);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -moz-text-fill-color: transparent;
+                    animation: coeur 1s ease-in-out;
+                }
+                @keyframes coeur {
+                    0%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
+                }
+                .icon-vide{
+                    display: none;
+                }
+            }
         }
     }
 }

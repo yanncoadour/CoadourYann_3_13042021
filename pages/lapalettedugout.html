@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>OhMyFood</title>   
+        <title>La Palette du Gout</title>   
         <link rel="stylesheet" href="../public/css/style.css">
         <link rel="stylesheet" href="../fontawesome-free-5.15.2-web/css/all.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,9 +15,9 @@
     <body>
         <header class="restaurantheader">
             <div class="restaurantheader__haut">
-                <div class="restaurantheader__haut__icon">
+                <div><a href="../index.html" class="restaurantheader__haut__icon">
                     <i class="fas fa-arrow-left fa-2x"></i>
-                </div>
+                </a></div>
                 <div class="restaurantheader__haut__logo">
                     <img src="../public/images/logo/ohmyfood.png" alt="logo-ohmyfood">
                 </div>
@@ -25,143 +25,153 @@
         </header>
 
         
-            <div class="header_image">
-                <img src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo restaurant La palette du goût">
-            </div>
+        <div class="header_image">
+            <img src="../public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo restaurant La palette du goût">
+        </div>
         
         <section class="page">
-            <div class="page_barretitre">
-                <div class="page_barretitre_titre">
+            <div class="page__header">
+                <div>
                     <h1>La palette du gout</h1>
                 </div>
-                <div class="page_barretitre_icon">
-                    <i class="far fa-heart"></i>
+                <div class="page__header__coeur">
+                    <i class="far fa-heart icon-vide"></i>
+                    <i class="fas fa-heart icon-plein"></i>
                 </div>
             </div>
             <div class="repas">
-                <div class="repas_entrées">
-                    <div class="entrées_titre">
+                <div class="repas_box">
+                    <div class="repas_box__titre">
                         <h2>ENTRÉES</h2>
                     </div>
-                    <div class="grid_entrées">
-                        <div class="bloc_entrée">
-                            <div class="entrée_plat">
-                                <h3>Fricassée d'escargot</h3>
+                    <div>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Fricassée d'escargot</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">Au piment d'Espelette</p>
                             </div>
-                            <div class="entrée_plat_description">
-                                <p>Au piment d'Espelette</p>
-                            </div>
-                            <div class="entrée_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>25€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>                
                         </div>
-                        <div class="bloc_entrée">
-                            <div class="entrée_plat">
-                                <h3>Foie gras de canard mi-cuit</h3>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Foie gras de canard mi-cuit</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">Et ses copeaux de truffe noire</p>
                             </div>
-                            <div class="entrée_plat_description">
-                                <p>Et ses copeaux de truffe noire</p>
-                            </div>
-                            <div class="entrée_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>35€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>    
                         </div>
-                        <div class="bloc_entrée">
-                            <div class="entrée_plat">
-                                <h3>Oeuf au plat</h3>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Oeuf au plat</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">Assaisonné à la truffe sur lit de caviar</p>
                             </div>
-                            <div class="entrée_plat_description">
-                                <p>Assaisonné à la truffe sur lit de caviar</p>
-                            </div>
-                            <div class="entrée_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>20€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>    
                         </div>
                     </div>
                 </div>
-                <div class="repas_plats">
-                    <div class="plats_titre">
+                <div class="repas_box">
+                    <div class="repas_box__titre">
                         <h2>PLATS</h2>
                     </div>
-                    <div class="grid_plats">
-                        <div class="bloc_plats">
-                            <div class="plats_plat">
-                                <h3>Filet de boeuf aux herbes</h3>
+                    <div>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Filet de boeuf aux herbes</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">Accompagné de sa ribambelle de légumes</p>
                             </div>
-                            <div class="plats_plat_description">
-                                <p>Accompagné de sa ribambelle de légumes</p>
-                            </div>
-                            <div class="plats_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>40€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>    
                         </div>
-                        <div class="bloc_plats">
-                            <div class="plats_plat">
-                                <h3>Parmentier de queue de boeuf</h3>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Parmentier de queue de boeuf</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">À la truffe noire sur sa purée de panais</p>
                             </div>
-                            <div class="plats_plat_description">
-                                <p>À la truffe noire sur sa purée de panais</p>
-                            </div>
-                            <div class="plats_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>35€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>    
                         </div>
-                        <div class="bloc_plats">
-                            <div class="plats_plat">
-                                <h3>Filet de turbot</h3>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Filet de turbot</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">Aux agrumes</p>
                             </div>
-                            <div class="plats_plat_description">
-                                <p>Aux agrumes</p>
-                            </div>
-                            <div class="plats_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>44€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>    
                         </div>
                     </div>
                 </div>
-                <div class="repas_desserts">
-                    <div class="desserts_titre">
+                <div class="repas_box">
+                    <div class="repas_box__titre">
                         <h2>DESSERTS</h2>
                     </div>
-                    <div class="grid_desserts">
-                        <div class="bloc_desserts">
-                            <div class="desserts_plat">
-                                <h3>Paris-Brest</h3>
+                    <div>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Paris-Brest</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">Revisité</p>
                             </div>
-                            <div class="desserts_plat_description">
-                                <p>Revisité</p>
-                            </div>
-                            <div class="desserts_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>18€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>    
                         </div>
-                        <div class="bloc_desserts">
-                            <div class="desserts_plat">
-                                <h3>Macaron au chocolat d'exception</h3>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Macaron au chocolat d'exception</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">Et glace à la vanille de Madagascar</p>
                             </div>
-                            <div class="desserts_plat_description">
-                                <p>Et glace à la vanille de Madagascar</p>
-                            </div>
-                            <div class="desserts_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>22€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>    
                         </div>
-                        <div class="bloc_desserts">
-                            <div class="desserts_plat">
-                                <h3>Mousse au chocolat</h3>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Mousse au chocolat</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">Au piment d'Espelette et à la truffe noire</p>
                             </div>
-                            <div class="desserts_plat_description">
-                                <p>Au piment d'Espelette et à la truffe noire</p>
-                            </div>
-                            <div class="desserts_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>23€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div> 
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="bouton">
-                <button>Commander</button>
+            <div>
+                <button class="bouton">Commander</button>
             </div>
         </section> 
         <footer class="footer">

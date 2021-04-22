@@ -15,9 +15,9 @@
     <body>
         <header class="restaurantheader">
             <div class="restaurantheader__haut">
-                <div class="restaurantheader__haut__icon">
+                <div><a href="../index.html" class="restaurantheader__haut__icon">
                     <i class="fas fa-arrow-left fa-2x"></i>
-                </div>
+                </a></div>
                 <div class="restaurantheader__haut__logo">
                     <img src="../public/images/logo/ohmyfood.png" alt="logo-ohmyfood">
                 </div>
@@ -25,142 +25,152 @@
         </header>
         
             <div class="header_image">
-                <img src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo restaurant Le délice des sens">
+                <img src="../public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo restaurant Le délice des sens">
             </div>
         
         <section class="page">
-            <div class="page_barretitre">
-                <div class="page_barretitre_titre">
+            <div class="page__header">
+                <div>
                     <h1>Le délice des sens</h1>
                 </div>
-                <div class="page_barretitre_icon">
-                    <i class="far fa-heart"></i>
+                <div class="page__header__coeur">
+                    <i class="far fa-heart icon-vide"></i>
+                    <i class="fas fa-heart icon-plein"></i>
                 </div>
             </div>
             <div class="repas">
-                <div class="repas_entrées">
-                    <div class="entrées_titre">
+                <div class="repas_box">
+                    <div class="repas_box__titre">
                         <h2>ENTRÉES</h2>
                     </div>
-                    <div class="grid_entrées">
-                        <div class="bloc_entrée">
-                            <div class="entrée_plat">
-                                <h3>Tartare de thon</h3>
+                    <div>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Tartare de thon</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">Assaisonné au yuzu</p>
                             </div>
-                            <div class="entrée_plat_description">
-                                <p>Assaisonné au yuzu</p>
-                            </div>
-                            <div class="entrée_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>25€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>      
                         </div>
-                        <div class="bloc_entrée">
-                            <div class="entrée_plat">
-                                <h3>Bouchée de homard croustillant</h3>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Bouchée de homard croustillant</h3>                            
+                                <p class="repas_box__vignettes__texte__sous-titre">Et sa farandole de petits légumes</p>
                             </div>
-                            <div class="entrée_plat_description">
-                                <p>Et sa farandole de petits légumes</p>
-                            </div>
-                            <div class="entrée_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>35€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>      
                         </div>
-                        <div class="bloc_entrée">
-                            <div class="entrée_plat">
-                                <h3>Velouté de cèpes</h3>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Velouté de cèpes</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">Aux truffes</p>
                             </div>
-                            <div class="entrée_plat_description">
-                                <p>Aux truffes</p>
-                            </div>
-                            <div class="entrée_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>20€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>      
                         </div>
                     </div>
                 </div>
-                <div class="repas_plats">
-                    <div class="plats_titre">
+                <div class="repas_box">
+                    <div class="repas_box__titre">
                         <h2>PLATS</h2>
                     </div>
-                    <div class="grid_plats">
-                        <div class="bloc_plats">
-                            <div class="plats_plat">
-                                <h3>Poulet rôti aux herbes de Provence</h3>
+                    <div>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Poulet rôti aux herbes de Provence</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">Et sa crème de truffe</p>
                             </div>
-                            <div class="plats_plat_description">
-                                <p>Et sa crème de truffe</p>
-                            </div>
-                            <div class="plats_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>40€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>      
                         </div>
-                        <div class="bloc_plats">
-                            <div class="plats_plat">
-                                <h3>Langouste rôtie</h3>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Langouste rôtie</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">Et ses légumes de saison</p>
                             </div>
-                            <div class="plats_plat_description">
-                                <p>Et ses légumes de saison</p>
-                            </div>
-                            <div class="plats_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>35€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>      
                         </div>
-                        <div class="bloc_plats">
-                            <div class="plats_plat">
-                                <h3>Côte de boeuf Angus</h3>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Côte de boeuf Angus</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">Et sa purée de panais</p>
                             </div>
-                            <div class="plats_plat_description">
-                                <p>Et sa purée de panais</p>
-                            </div>
-                            <div class="plats_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>44€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>      
                         </div>
                     </div>
                 </div>
-                <div class="repas_desserts">
-                    <div class="desserts_titre">
+                <div class="repas_box">
+                    <div class="repas_box__titre">
                         <h2>DESSERTS</h2>
                     </div>
-                    <div class="grid_desserts">
-                        <div class="bloc_desserts">
-                            <div class="desserts_plat">
-                                <h3>Farandole de desserts</h3>
+                    <div>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Farandole de desserts</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">Du chef</p>
                             </div>
-                            <div class="desserts_plat_description">
-                                <p>Du chef</p>
-                            </div>
-                            <div class="desserts_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>18€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>      
                         </div>
-                        <div class="bloc_desserts">
-                            <div class="desserts_plat">
-                                <h3>Crème brulée</h3>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Crème brulée</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">Revisitée</p>
                             </div>
-                            <div class="desserts_plat_description">
-                                <p>Revisitée</p>
-                            </div>
-                            <div class="desserts_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>22€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>      
                         </div>
-                        <div class="bloc_desserts">
-                            <div class="desserts_plat">
-                                <h3>Tiramisu</h3>
+                        <div class="repas_box__vignettes">
+                            <div class="repas_box__vignettes__texte">
+                                <h3 class="repas_box__vignettes__texte__titre">Tiramisu</h3>
+                                <p class="repas_box__vignettes__texte__sous-titre">À la noisette</p>
                             </div>
-                            <div class="desserts_plat_description">
-                                <p>À la noisette</p>
-                            </div>
-                            <div class="desserts_prix">
+                            <div class="repas_box__vignettes__prix">
                                 <p>23€</p>
                             </div>
+                            <div class="repas_box__vignettes__icon">
+                                <div class="repas_box__vignettes__icon__anim"><i class="fas fa-check-circle"></i></div>
+                            </div>      
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="bouton">
-                <button>Commander</button>
+            <div>
+                <button class="bouton">Commander</button>
             </div>
         </section> 
         <footer class="footer">

@@ -6,9 +6,22 @@
     &__titre{
         font-family: $police-titre ;
         text-align: center;
+        @media (max-width: 599px) {
+           text-align: left;
+           margin-left: 2.75em;
+           font-size: 12px;
+           font-weight: lighter;
+        }
     }
     &__menu{
         text-align: center;
+        @media (max-width: 599px) {
+            text-align: left;
+            margin-left: 2em;
+        }
+        i{
+            padding-right: 1em;
+        }
         a{
             text-decoration: none;
             color: white;
@@ -17,9 +30,18 @@
             display: flex;
             justify-content: center;
             margin-bottom: 0.25em;
+            @media (max-width: 599px) {
+                justify-content: flex-start;
+            }
+            :hover{
+                color: $couleur_tertiaire;
+            }
         }
         &__sansicon{
             margin-bottom: 0.25em;
+            :hover{
+                color: $couleur_tertiaire;
+            }
         }
     }
 }

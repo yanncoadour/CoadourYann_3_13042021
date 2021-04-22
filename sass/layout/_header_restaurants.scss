@@ -3,18 +3,34 @@
     &__haut{
         display: flex;
         align-items: center;
+        
         .fa-arrow-left{
             margin-left: 2em;
             margin-right: 35vw;
+            @media (max-width: 599px) {
+                margin-left :1em;
+                margin-right :24vw ;
+            }
         
         }
         &__logo{
             text-align: center;
             padding: 1em 0em 1em 0em;
+            width: 50px;
+          img{
+            @media (max-width: 599px) {
+              width: 150px;
+              padding: 0em 0em 0em 0em
+              
+            }
+          }
         }
         a{
             text-decoration: none;
             color: black;
+            @media (max-width: 599px) {
+                font-size: 10px;
+            }
         }
     }
 }

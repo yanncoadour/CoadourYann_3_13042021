@@ -3,7 +3,7 @@
     height: 25em;
     img{
         width: 100%;
-        height: 20em;
+        height: 28em;
         object-fit: cover;
     }
 }
@@ -101,7 +101,7 @@
             transform: rotate(360deg);
         }
         &:hover .repas_box__vignettes__texte{
-            width: 80%;
+            width: 100%;
         }
         &:hover .repas_box__vignettes__texte__titre{
             overflow: hidden;
@@ -113,7 +113,7 @@
             text-overflow: ellipsis;
         }
         &:hover .repas_box__vignettes__prix{
-            transform: translateX(-2px);
+            transform: translateX(100px);
         }
 
        
@@ -198,10 +198,10 @@
         }   
 }
 
-.apparition {
-    animation: fadein 5s;
-    -moz-animation: fadein 5s; /* Firefox */
-    -webkit-animation: fadein 5s; /* Safari et Chrome */
+.apparition{
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari et Chrome */
 }
 @keyframes fadein {
     from {

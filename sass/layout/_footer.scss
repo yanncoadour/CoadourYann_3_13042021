@@ -26,9 +26,10 @@
             text-decoration: none;
             color: white;
         }
-        &__avecicon{
+        &__avecicon {
             display: flex;
             justify-content: center;
+            align-items: center;
             margin-bottom: 0.25em;
             @media (max-width: 599px) {
                 justify-content: flex-start;
@@ -44,4 +45,8 @@
             }
         }
     }
+}
+
+.fa-hands-helping{
+    font-size: 13px;
 }

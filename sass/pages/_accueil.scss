@@ -28,13 +28,13 @@
   
     &__numero{   
         &__number{
-            background-color: #9356DC;
-            border: 1px solid #9356DC;
+            background-color: #9356DC;;
             border-radius: 50px;
             padding-top: 0.15em;
             padding-left: 0.5em;
             padding-bottom: 0.15em;
             padding-right: 0.5em;
+            margin-top: 1.5em;
             line-height: normal;
             color:white;  
             margin-right: -5em;
@@ -47,6 +47,7 @@
         align-items: center;
         justify-content: flex-start;
         width: 19em;
+        height: 4.5em;
         margin-bottom: 1em;
         border-radius: 20px;
         box-shadow: 0 4px 0.5em #dfdfdf;
@@ -66,6 +67,7 @@
         &__icon{
             margin-right: 1.5em;
             margin-left: 2em;
+            color :#797979
             
         }
         &__texte{
@@ -134,7 +136,7 @@
        margin: 0.5em 1em 0.5em 1em;
     }
     &:hover{
-        transform: scale(1.05);
+        transform: scale(1.02);
         box-shadow: 0 8px 1.5em #797979;
     }
     img{
@@ -220,4 +222,3 @@
         }
     }
 }
-

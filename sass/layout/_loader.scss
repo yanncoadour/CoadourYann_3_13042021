@@ -7,25 +7,26 @@
     display: flex;   
     justify-content: center;    
     align-items: center;    
-    animation: out 200ms 3s forwards;
+    animation: out 250ms 3s forwards;
     &__spinner {
         position: absolute;
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
         background-color: transparent;
         border-radius: 50%;
-        border: 2px solid $couleur_tertiaire;
+        border: 5px solid $couleur_tertiaire;
         animation: loader 1.5s backwards ease-in-out infinite;
         &--secondary{
-            border: 2px solid $couleur_secondaire;    
-            animation: loader  1.5s 300ms backwards ease-in-out infinite; 
+            border: 5px solid $couleur_secondaire;    
+            animation: loader  1.5s 500ms backwards ease-in-out infinite; 
         }
         &--tertiary{
-            border: 2px solid $couleur_primaire;    
-            animation: loader  1.5s 600ms backwards ease-in-out infinite; 
+            border: 5px solid $couleur_primaire;    
+            animation: loader  1.5s 750ms backwards ease-in-out infinite; 
         }
     }
 }
+
 @keyframes loader{
     0%{
         transform: scale(0);

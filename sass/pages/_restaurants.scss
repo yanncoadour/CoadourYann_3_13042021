@@ -29,7 +29,7 @@
            justify-content: flex-start;
         }
         
-        h1{
+        h2{
             font-family: 'Shrikhand' ;
             font-size: 40px;
             padding-right: 2em;
@@ -60,10 +60,6 @@
                     display: block;
                     background: linear-gradient(to bottom left,$couleur_primaire, $couleur_secondaire);
                     background-clip: text;
-                    -webkit-background-clip: text;
-                    -moz-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    -moz-text-fill-color: transparent;
                     animation: coeur 500ms ease-in-out;
                 }
                 @keyframes coeur {
@@ -93,7 +89,7 @@
 .repas_box{
     display: flex;
     flex-direction: column;
-    h2{
+    h3{
         border-bottom: 4px solid $couleur_tertiaire;
         padding-bottom: 5px;
         margin-bottom: 0;
@@ -132,7 +128,7 @@
             transform: rotate(360deg);
         }
         &:hover .repas_box__vignettes__texte{
-            width: 100%;
+            width: 60%;
         }
         &:hover .repas_box__vignettes__texte__titre{
             overflow: hidden;
@@ -144,7 +140,7 @@
             text-overflow: ellipsis;
         }
         &:hover .repas_box__vignettes__prix{
-            transform: translateX(100px);
+            transform: translateX(25px);
         }
 
        
@@ -159,14 +155,13 @@
             text-overflow: ellipsis;
             &__titre{
                 margin: 0.5em 0em 0em 1em; 
-                 font-weight: 600;
+                font-weight: 600;
                 font-size: 1.1rem;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
             &__sous-titre{
                 margin:0.25em 0em 0.5em 1em;
-            
                 font-weight: 300;
                 margin-bottom: 15px;
                 font-size: 0.95rem;
@@ -177,11 +172,12 @@
         &__prix{
             p{
                 align-self: flex-end;
-                color: #black;
+                color: black;
+                font-size: 0.95rem;
                 font-weight: bold;
                 position: absolute;
                 right: 15px;
-                bottom: -7px;
+                bottom: 0px;
                 transform-origin: right;
                 transition: transform 300ms 100ms linear;
             }
@@ -232,10 +228,9 @@
         }   
 }
 
-.apparition{
+.repas_box__vignettes{
     animation: fadein 6s;
-    -moz-animation: fadein 6s; /* Firefox */
-    -webkit-animation: fadein 6s; /* Safari et Chrome */
+   
 }
 @keyframes fadein {
     from {
@@ -245,15 +240,7 @@
         opacity:1;
     }
 }
-@-moz-keyframes fadein { /* sur Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* sur Safari et Chrome */
+@keyframes fadein { 
     from {
         opacity:0;
     }

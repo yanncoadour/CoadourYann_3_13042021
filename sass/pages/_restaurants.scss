@@ -48,18 +48,25 @@
             }
             .icon-plein{
                 display: none;
+                @media (max-width: 599px) {
+                    font-size: 20px;
+                }
             }
             .icon-vide{
                 display: block;
+                @media (max-width: 599px) {
+                    font-size: 20px;
+                }
             }
             &:hover{
-                .icon-vide{
-                    display: none;
-                }
                 .icon-plein{
                     display: block;
                     background: linear-gradient(to bottom left,$couleur_primaire, $couleur_secondaire);
                     background-clip: text;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -moz-text-fill-color: transparent;
                     animation: coeur 500ms ease-in-out;
                 }
                 @keyframes coeur {
@@ -69,6 +76,10 @@
                     100%{
                         opacity: 1;
                     }
+                }
+                .icon-vide{
+                    display: none;
+                    
                 }
             }
         }

@@ -546,16 +546,27 @@ body {
 .page__header__coeur .icon-plein {
   display: none;
 }
+@media (max-width: 599px) {
+  .page__header__coeur .icon-plein {
+    font-size: 20px;
+  }
+}
 .page__header__coeur .icon-vide {
   display: block;
 }
-.page__header__coeur:hover .icon-vide {
-  display: none;
+@media (max-width: 599px) {
+  .page__header__coeur .icon-vide {
+    font-size: 20px;
+  }
 }
 .page__header__coeur:hover .icon-plein {
   display: block;
   background: linear-gradient(to bottom left, #9356DC, #FF79DA);
   background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   animation: coeur 500ms ease-in-out;
 }
 @keyframes coeur {
@@ -565,6 +576,9 @@ body {
   100% {
     opacity: 1;
   }
+}
+.page__header__coeur:hover .icon-vide {
+  display: none;
 }
 
 .repas {

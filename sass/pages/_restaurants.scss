@@ -62,11 +62,9 @@
                 .icon-plein{
                     display: block;
                     background: linear-gradient(to bottom left,$couleur_primaire, $couleur_secondaire);
-                    background-clip: text;
                     -webkit-background-clip: text;
-                    -moz-background-clip: text;
                     -webkit-text-fill-color: transparent;
-                    -moz-text-fill-color: transparent;
+                    -webkit-text-stroke-width: 0;
                     animation: coeur 500ms ease-in-out;
                 }
                 @keyframes coeur {

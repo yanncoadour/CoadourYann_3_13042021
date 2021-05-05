@@ -113,7 +113,7 @@ body {
 @media (max-width: 599px) {
   .restaurantheader__haut .fa-arrow-left {
     margin-left: 1em;
-    margin-right: 24vw;
+    margin-right: 20vw;
   }
 }
 .restaurantheader__haut__logo {
@@ -466,11 +466,9 @@ body {
 .restaurants_bloc__description__coeur:hover .icon-plein {
   display: block;
   background: linear-gradient(to bottom left, #9356DC, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0;
   animation: coeur 500ms ease-in-out;
 }
 @keyframes coeur {
@@ -562,11 +560,9 @@ body {
 .page__header__coeur:hover .icon-plein {
   display: block;
   background: linear-gradient(to bottom left, #9356DC, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0;
   animation: coeur 500ms ease-in-out;
 }
 @keyframes coeur {

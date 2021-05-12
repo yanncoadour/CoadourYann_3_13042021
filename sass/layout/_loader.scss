@@ -25,6 +25,10 @@
             animation: loader  1.5s 750ms backwards ease-in-out infinite; 
         }
     }
+    &__texte{
+        font-family: $police-titre;
+        font-size: 25px;
+    }
 }
 
 @keyframes loader{

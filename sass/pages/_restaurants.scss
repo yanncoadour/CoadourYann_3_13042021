@@ -29,7 +29,7 @@
            justify-content: flex-start;
         }
         
-        h2{
+        h1{
             font-family: 'Shrikhand' ;
             font-size: 40px;
             padding-right: 2em;
@@ -98,7 +98,7 @@
 .repas_box{
     display: flex;
     flex-direction: column;
-    h3{
+    h2{
         border-bottom: 4px solid $couleur_tertiaire;
         padding-bottom: 5px;
         margin-bottom: 0;
@@ -124,6 +124,9 @@
         justify-content: space-between;
         align-items:flex-end;
         cursor: pointer;
+        animation: animation 0.6s;
+        animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+        animation-fill-mode: both;
         @media (max-width: 599px) {
            width: 92vw;
            margin-left: 1em;
@@ -237,23 +240,19 @@
         }   
 }
 
-.repas_box__vignettes{
-    animation: fadein 6s;
-   
-}
-@keyframes fadein {
-    from {
-        opacity:0;
+
+
+@for $i from 0 to 10 {
+    .animation--#{$i} {
+      animation-delay: #{$i/10}s;
     }
-    to {
-        opacity:1;
+  }
+
+@keyframes animation {
+    0% {
+      transform: scale(0);
     }
-}
-@keyframes fadein { 
-    from {
-        opacity:0;
+    100% {
+      transform: scale(1);
     }
-    to {
-        opacity:1;
-    }
-}
+  }

@@ -50,6 +50,15 @@ body {
 }
 .header__local__texte {
   font-weight: bold;
+  color: black;
+  border: none;
+  outline: none;
+  background-color: #eaeaea;
+  font-size: 1rem;
+  padding: 20px 5px 20px 5px;
+  margin-top: 5px;
+  text-align: center;
+  width: 150px;
 }
 .header__présentation {
   width: 100%;
@@ -526,13 +535,13 @@ body {
     justify-content: flex-start;
   }
 }
-.page__header h2 {
+.page__header h1 {
   font-family: "Shrikhand";
   font-size: 40px;
   padding-right: 2em;
 }
 @media (max-width: 599px) {
-  .page__header h2 {
+  .page__header h1 {
     font-size: 28px;
     padding-left: 1em;
     padding-right: 1em;
@@ -598,7 +607,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.repas_box h3 {
+.repas_box h2 {
   border-bottom: 4px solid #99E2D0;
   padding-bottom: 5px;
   margin-bottom: 0;
@@ -606,7 +615,7 @@ body {
   font-weight: lighter;
 }
 @media (max-width: 599px) {
-  .repas_box h3 {
+  .repas_box h2 {
     font-size: 25px;
     margin-left: 1em;
   }
@@ -625,6 +634,9 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   cursor: pointer;
+  animation: animation 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
 }
 @media (max-width: 599px) {
   .repas_box__vignettes {
@@ -734,24 +746,52 @@ body {
   box-shadow: 0 4px 0.5em #a5a5a5;
 }
 
-.repas_box__vignettes {
-  animation: fadein 6s;
+.animation--0 {
+  animation-delay: 0s;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.animation--1 {
+  animation-delay: 0.1s;
 }
-@keyframes fadein {
-  from {
-    opacity: 0;
+
+.animation--2 {
+  animation-delay: 0.2s;
+}
+
+.animation--3 {
+  animation-delay: 0.3s;
+}
+
+.animation--4 {
+  animation-delay: 0.4s;
+}
+
+.animation--5 {
+  animation-delay: 0.5s;
+}
+
+.animation--6 {
+  animation-delay: 0.6s;
+}
+
+.animation--7 {
+  animation-delay: 0.7s;
+}
+
+.animation--8 {
+  animation-delay: 0.8s;
+}
+
+.animation--9 {
+  animation-delay: 0.9s;
+}
+
+@keyframes animation {
+  0% {
+    transform: scale(0);
   }
-  to {
-    opacity: 1;
+  100% {
+    transform: scale(1);
   }
 }
 
